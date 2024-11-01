@@ -1,0 +1,46 @@
+// __        __          _                 
+// \ \      / /_ _ _   _| |__   __ _ _ __  
+//  \ \ /\ / / _` | | | | '_ \ / _` | '__| 
+//   \ V  V / (_| | |_| | |_) | (_| | |    
+//    \_/\_/ \__,_|\__, |_.__/ \__,_|_|    
+//                 |___/                   
+//  
+// by FindMyName (2024) 
+// ----------------------------------------------------- 
+//
+{
+    "position": "top",
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,
+    "spacing": 0,
+    "include": [
+        "~/.config/waybar/modules.json"
+    ],
+    "modules-left": [
+        "custom/archicon",
+        "group/settings",
+        "wlr/taskbar",
+        "group/quicklinks",
+        "hyprland/window"
+    ],
+    "modules-center": [
+        "hyprland/workspaces"
+    ],
+    "modules-right": [
+        "custom/audio-visualizer",
+        "tray",
+        "hyprland/language",
+        "pulseaudio#microphone",
+        "pulseaudio",
+        "bluetooth",
+        "network",
+        "battery",
+        "disk",
+        "cpu",
+        "memory",
+        "clock",
+        "custom/exit"
+    ]
+}
