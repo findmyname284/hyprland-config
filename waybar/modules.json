@@ -1,6 +1,8 @@
 {
     "hyprland/workspaces": {
         "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1", 
         "active-only": false,
         "all-outputs": true,
         "format": "{}",
@@ -38,7 +40,8 @@
             "(.*) - Outlook": "$1",
             "(.*) Microsoft Teams": "$1"
         },
-        "separate-outputs": true
+        "separate-outputs": true,
+        "max-length": 30
     },
     "pulseaudio": {
         "format": "{icon} {volume}%",
@@ -143,18 +146,5 @@
         "on-click": "sleep 0.1; kitty -e fish",
         "on-click-right": "sleep 0.2; (pgrep wofi || wofi --show drun)",
         "tooltip": false
-    },
-    "custom/audio-visualizer": {
-        "format": "{}",
-        // "exec": "~/.config/waybar/visualizer_script.sh",
-        // "return-type": "json",
-        // "interval": 1
-    },
-    "custom/weather": {
-        "tooltip": true,
-        "format": "{}",
-        "interval": 30,
-        "exec": "~/.config/waybar/scripts/waybar-wttr.py",
-        "return-type": "json"
     }
 }

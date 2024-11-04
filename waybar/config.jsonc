@@ -9,6 +9,7 @@
 // ----------------------------------------------------- 
 //
 {
+    "layer": "top",
     "position": "top",
     "margin-top": 0,
     "margin-bottom": 0,
@@ -20,17 +21,15 @@
     ],
     "modules-left": [
         "custom/archicon",
-        "group/settings",
         "wlr/taskbar",
-        "group/quicklinks",
-        "hyprland/window"
+        "hyprland/workspaces",
+        "tray"
     ],
     "modules-center": [
-        "hyprland/workspaces"
+        "hyprland/window"
     ],
     "modules-right": [
         "custom/audio-visualizer",
-        "tray",
         "hyprland/language",
         "pulseaudio#microphone",
         "pulseaudio",
