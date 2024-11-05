@@ -2,7 +2,7 @@
     "hyprland/workspaces": {
         "on-click": "activate",
         "on-scroll-up": "hyprctl dispatch workspace e+1",
-        "on-scroll-down": "hyprctl dispatch workspace e-1", 
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
         "active-only": false,
         "all-outputs": true,
         "format": "{}",
@@ -116,9 +116,34 @@
         "spacing": 10
     },
     "clock": {
-        "format": "{:%H:%M %a}",
-        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "<span color='#fab387'></span> {:%H:%M}",
+        "tooltip-format": "<big><span color='#cdd6f4'>{:%Y %B}</span></big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "<span color='#eba0ac'></span> <span color='#cdd6f4'>{:%Y-%m-%d}</span>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#cdd6f4'><b>{}</b></span>",
+                "days": "<span color='#cdd6f4'><b>{}</b></span>",
+                "weeks": "<span color='#f5c2e7'><b>W{}</b></span>",
+                "weekdays": "<span color='#f5c2e7'><b>{}</b></span>",
+                "today": "<span color='#eba0ac'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+    "hyprland/language": {
+        "format": "󰌏 {}",
+        "format-en": "EN",
+        "format-kk": "KZ"
     },
     "disk": {
         "interval": 30,
@@ -146,5 +171,9 @@
         "on-click": "sleep 0.1; kitty -e fish",
         "on-click-right": "sleep 0.2; (pgrep wofi || wofi --show drun)",
         "tooltip": false
+    },
+    "custom/cava_mviz": {
+        "exec": "~/.config/waybar/scripts/WaybarCava.sh",
+        "format": "{}"
     }
 }

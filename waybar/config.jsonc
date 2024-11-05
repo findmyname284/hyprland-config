@@ -22,6 +22,7 @@
     "modules-left": [
         "custom/archicon",
         "wlr/taskbar",
+        "custom/cava_mviz",
         "hyprland/workspaces",
         "tray"
     ],
