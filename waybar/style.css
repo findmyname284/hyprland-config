@@ -34,7 +34,7 @@ button:hover {
 }
 
 #workspaces {
-    margin: 0 30px;
+    margin: 0 15px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 15px;
     background-color: @base;
@@ -130,12 +130,12 @@ button:hover {
 
 #window {
     color: @text;
-    padding: 10px 0;
 }
 
 #custom-cava_mviz {
-    margin-left: 30px;
-	color: @pink;
+    margin: 0 15px;
+	color: @red;
+    padding: 0 10px;
 }
 
 #language {
@@ -145,16 +145,19 @@ button:hover {
 #taskbar {
     margin-left: 10px;
 }
-
-/* #taskbar .active {
-    background-color: #606c75;
-    border-radius: 15px;
-} */
+ 
+#tray {
+    margin: 0 15px;
+}
 
 #custom-archicon {
     color: @blue;
     padding: 0 10px 0 0;
     font-size: 17px;
+}
+
+#custom-weather {
+    padding: 0 10px;
 }
 
 #custom-exit {
@@ -163,11 +166,12 @@ button:hover {
 
 #tray,
 #taskbar,
+#custom-cava_mviz,
+#custom-weather,
 .modules-right,
 .modules-center {
     background-color: @base;
     border-radius: 15px;
-    padding: 0 10px;
 }
 
 .modules-right {

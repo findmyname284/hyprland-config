@@ -21,9 +21,10 @@
     ],
     "modules-left": [
         "custom/archicon",
-        "wlr/taskbar",
-        "custom/cava_mviz",
+        // "wlr/taskbar",
         "hyprland/workspaces",
+        "custom/cava_mviz",
+        "custom/weather",
         "tray"
     ],
     "modules-center": [

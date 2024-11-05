@@ -1,4 +1,3 @@
-/cava/shaders
 /cef_user_data
 /Code
 /dconf
@@ -26,3 +25,6 @@
 /nemo
 /mpv
 /menus
+/nwg-drawer
+/nwg-look
+/spotify
