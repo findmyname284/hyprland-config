@@ -43,7 +43,7 @@
         "separate-outputs": true,
         "max-length": 30
     },
-    "pulseaudio": {
+    "pipewire": {
         "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
@@ -116,7 +116,7 @@
         "spacing": 10
     },
     "clock": {
-        "format": "<span color='#fab387'></span> {:%H:%M}",
+        "format": "<span color='#fab387'></span> {:%H:%M %a}",
         "tooltip-format": "<big><span color='#cdd6f4'>{:%Y %B}</span></big>\n<tt><small>{calendar}</small></tt>",
         "format-alt": "<span color='#eba0ac'></span> <span color='#cdd6f4'>{:%Y-%m-%d}</span>",
         "calendar": {
