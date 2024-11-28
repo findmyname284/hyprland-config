@@ -31,4 +31,8 @@ void main()
     fragColor.r = fg_color.x * y * bar_r;
     fragColor.g = fg_color.y * y * bar_r;
     fragColor.b = fg_color.z * y * bar_r;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> dfba3c2f25f7582b9125a749f9eb427c629892f6

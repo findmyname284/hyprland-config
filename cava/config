@@ -181,7 +181,10 @@
 ; sdl_height = 500
 ; sdl_x = -1
 ; sdl_y= -1
+<<<<<<< HEAD
 ; sdl_full_screen = 0
+=======
+>>>>>>> dfba3c2f25f7582b9125a749f9eb427c629892f6
 
 # set label on bars on the x-axis. Can be 'frequency' or 'none'. Default: 'none'
 # 'frequency' displays the lower cut off frequency of the bar above.
@@ -200,6 +203,7 @@
 ; for glsl output mode, keep rendering even if no audio
 ; continuous_rendering = 0
 
+<<<<<<< HEAD
 # disable console blank (screen saver) in tty
 # (Not supported on FreeBSD)
 ; disable_blanking = 0
@@ -210,6 +214,8 @@
 # show waveform instead of frequency spectrum, 1 = on, 0 = off
 ; waveform = 0
 
+=======
+>>>>>>> dfba3c2f25f7582b9125a749f9eb427c629892f6
 [color]
 
 # Colors can be one of seven predefined: black, blue, cyan, green, magenta, red, white, yellow.
@@ -228,6 +234,7 @@
 # background must also be defined in hex or remain commented out. 1 = on, 0 = off.
 # You can define as many as 8 different colors. They range from bottom to top of screen
 gradient = 1
+<<<<<<< HEAD
 gradient_count = 2
 gradient_color_1 = '#f2cdcd'
 gradient_color_2 = '#cdd6f4'
@@ -240,6 +247,16 @@ gradient_color_2 = '#cdd6f4'
 #gradient_color_7 = '#f5dce7'
 #gradient_color_8 = '#f5dfe7'
 
+=======
+gradient_color_1 = '#FB140E'
+gradient_color_2 = '#A01395'
+gradient_color_3 = '#6F0CC7'
+gradient_color_4 = '#FD74EC'
+gradient_color_5 = '#0F0487'
+gradient_color_6 = '#5042F9'
+gradient_color_7 = '#1536FA'
+gradient_color_8 = '#FC150F'
+>>>>>>> dfba3c2f25f7582b9125a749f9eb427c629892f6
 
 
 
@@ -279,4 +296,8 @@ gradient_color_2 = '#cdd6f4'
 ; 2 = 1
 ; 3 = 1 # midtone
 ; 4 = 1
+<<<<<<< HEAD
 ; 5 = 1 # treble
+=======
+; 5 = 1 # treble
+>>>>>>> dfba3c2f25f7582b9125a749f9eb427c629892f6
