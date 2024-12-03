@@ -43,8 +43,8 @@
     "pulseaudio": {
         "format": "{icon} {volume}%",
         "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": " {icon} {format_source}",
-        "format-muted": " Muted",
+        "format-bluetooth-muted": "󰗿 {icon} {format_source}",
+        "format-muted": "  Muted",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
@@ -66,7 +66,7 @@
     "pulseaudio#microphone": {
         "format": "{format_source}",
         "format-source": " {volume}%",
-        "format-source-muted": " Muted",
+        "format-source-muted": "  Muted",
         "on-click": "pamixer --default-source -t",
         "on-scroll-up": "pamixer --default-source -i 5",
         "on-scroll-down": "pamixer --default-source -d 5",
@@ -86,7 +86,7 @@
             "critical": 15
         },
         "format": "{icon}   {capacity}%",
-        "format-charging": "  {capacity}%",
+        "format-charging": "󰂄  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{icon}  {time}",
         "format-full": "{icon}  {capacity}%",
@@ -100,10 +100,10 @@
     },
     "network": {
         "format-wifi": " {signalStrength}%",
-        "format-ethernet": "{cidr} ",
+        "format-ethernet": "{cidr} ",
         "format-disconnected": "󰖪",
         "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
-        "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+        "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
         "tooltip-format-disconnected": "Disconnected",
         "max-length": 50,
         "on-click": "nm-connection-editor"
