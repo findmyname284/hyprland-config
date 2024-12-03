@@ -11,8 +11,4 @@ void main()
 {
     gl_Position =  vec4(vertexPosition_modelspace,1);
     fragCoord  = (vertexPosition_modelspace.xy+vec2(1,1))/2.0;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> dfba3c2f25f7582b9125a749f9eb427c629892f6
