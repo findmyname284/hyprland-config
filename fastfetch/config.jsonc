@@ -16,7 +16,7 @@
         "de",
         "wm",
         "terminal",
-        "cpu",
+        "localip",
         "memory",
         "break"
     ]

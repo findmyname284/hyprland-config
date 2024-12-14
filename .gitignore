@@ -5,3 +5,8 @@
 /*.log
 /mimeapps.*
 /nohup.out
+/spicetify
+/spotify
+/vlc
+/pavucontrol.ini
+/QtProject.conf
