@@ -1,0 +1,1 @@
+pacman -Sy nwg-look mako nemo rofi waybar fish fastfetch hyprpaper git os-prober spotify-launcher telegram-desktop nwg-dock-hyprland gtk4 
