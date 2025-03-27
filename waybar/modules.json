@@ -1,0 +1,187 @@
+{
+    "hyprland/workspaces": {
+        "on-click": "activate",
+        "on-scroll-up": "hyprctl dispatch workspace e+1",
+        "on-scroll-down": "hyprctl dispatch workspace e-1",
+        "active-only": false,
+        "all-outputs": true,
+        "format": "{}",
+        "persistent-workspaces": {
+            "*": 4
+        }
+    },
+    "wlr/taskbar": {
+        "format": "{icon}",
+        "icon-size": 16,
+        "tooltip-format": "{title}",
+        "on-click": "activate",
+        "on-click-middle": "close",
+        "ignore-list": [
+            "kitty"
+        ]
+    },
+    "hyprland/window": {
+        "max-length": 25
+    },
+    "pulseaudio": {
+        "format": "{icon} {volume}%",
+        "format-bluetooth-muted": "󰗿  Muted",
+        "format-muted": "  Muted",
+        "format-source": " {volume}%",
+        "format-icons": {
+            "headphone": "",
+            "hands-free": "󰥰",
+            "headset": "󰋎",
+            "phone": "",
+            "portable": "",
+            "car": "",
+            "default": [
+                "",
+                " ",
+                " "
+            ]
+        },
+        "scroll-step": 2,
+        "on-click": "pamixer -t"
+    },
+    "pulseaudio#microphone": {
+        "format": "{format_source}",
+        "format-source": " {volume}%",
+        "format-source-muted": "  Muted",
+        "on-click": "pamixer --default-source -t",
+        "on-scroll-up": "pamixer --default-source -i 5",
+        "on-scroll-down": "pamixer --default-source -d 5",
+        "scroll-step": 5
+    },
+    "bluetooth": {
+        "format": "󰂯",
+        "format-disabled": "󰂲",
+        "format-off": "󰂲",
+        "format-connected": "󰂱 {device_battery_percentage}%",
+        "on-click": "blueman-manager",
+        "format-no-controller": ""
+    },
+    "backlight": {
+        "device": "amdgpu_bl1",
+        "format": " {icon} {percent}% ",
+        "format-icons": [
+            "󰃞",
+            "󰃟",
+            "󰃠"
+        ],
+        "on-scroll-up": "brightnessctl set +5% -d amdgpu_bl1",
+        "on-scroll-down": "brightnessctl set 5%- -d amdgpu_bl1"
+    },
+    "battery": {
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "interval": 5,
+        "format": "{icon} {capacity}%",
+        "format-charging": "󰂄 {capacity}%",
+        "format-plugged": " {capacity}%",
+        "format-alt": "{icon} {time}",
+        "format-full": "{icon} {capacity}%",
+        "format-icons": [
+            "",
+            "",
+            "",
+            "",
+            ""
+        ]
+    },
+    "custom/audio": {
+        "format": "🎧 {}",
+        "exec": "playerctl metadata --format '{{ artist }} - {{ title }}'",
+        "interval": 1,
+        "tooltip": true,
+        "on-click": "playerctl play-pause",
+        "on-scroll-up": "playerctl next",
+        "on-scroll-down": "playerctl previous",
+        "max-length": 30
+    },
+    "network": {
+        "format-wifi": " {signalStrength}%",
+        "format-ethernet": "{cidr} ",
+        "format-disconnected": "󰖪",
+        "tooltip-format-wifi": "  {ifname} @ {essid}\nIP: {ipaddr}\nStrength: {signalStrength}%\nFreq: {frequency}MHz\nUp: {bandwidthUpBits} Down: {bandwidthDownBits}",
+        "tooltip-format-ethernet": " {ifname}\nIP: {ipaddr}\n up: {bandwidthUpBits} down: {bandwidthDownBits}",
+        "tooltip-format-disconnected": "Disconnected",
+        "max-length": 50,
+        "on-click": "nm-connection-editor"
+    },
+    "tray": {
+        "icon-size": 16,
+        "spacing": 7
+    },
+    "clock": {
+        "format": "<span color='#fab387'></span> {:%H:%M %a}",
+        "tooltip-format": "<big><span color='#cdd6f4'>{:%Y %B}</span></big>\n<tt><small>{calendar}</small></tt>",
+        "format-alt": "<span color='#eba0ac'></span> <span color='#cdd6f4'>{:%Y-%m-%d}</span>",
+        "calendar": {
+            "mode": "month",
+            "mode-mon-col": 3,
+            "weeks-pos": "right",
+            "on-scroll": 1,
+            "format": {
+                "months": "<span color='#cdd6f4'><b>{}</b></span>",
+                "days": "<span color='#cdd6f4'><b>{}</b></span>",
+                "weeks": "<span color='#f5c2e7'><b>W{}</b></span>",
+                "weekdays": "<span color='#f5c2e7'><b>{}</b></span>",
+                "today": "<span color='#eba0ac'><b><u>{}</u></b></span>"
+            }
+        },
+        "actions": {
+            "on-click-right": "mode",
+            "on-click-forward": "tz_up",
+            "on-click-backward": "tz_down",
+            "on-scroll-up": "shift_up",
+            "on-scroll-down": "shift_down"
+        }
+    },
+    "hyprland/language": {
+        "format": "󰌏 {}",
+        "format-en": "EN",
+        "format-kk": "KZ"
+    },
+    "disk": {
+        "interval": 30,
+        "format": " {percentage_used}%",
+        "path": "/",
+        "on-click": "(pgrep missioncenter || nohup missioncenter > /dev/null 2>&1 &)"
+    },
+    "cpu": {
+        "interval": 5,
+        "format": " {usage}%",
+        "on-click": "(pgrep missioncenter || nohup missioncenter > /dev/null 2>&1 &)"
+    },
+    "memory": {
+        "interval": 5,
+        "format": " {}%",
+        "on-click": "(pgrep missioncenter || nohup missioncenter > /dev/null 2>&1 &)"
+    },
+    "custom/exit": {
+        "format": " ",
+        "on-click": "wlogout",
+        "tooltip": false,
+        "spacing": 10
+    },
+    "custom/archicon": {
+        "format": "",
+        "on-click": "sleep 0.1; kitty -e fish",
+        "on-click-right": "sleep 0.2; ~/.config/rofi/launchers/type-6/launcher.sh",
+        "tooltip": false
+    },
+    "custom/cava_mviz": {
+        "exec": "~/.config/waybar/scripts/WaybarCava.sh",
+        "format": "{}"
+    },
+    "custom/weather": {
+        "format": "{}",
+        "tooltip": true,
+        "interval": 3600,
+        "exec": "~/.config/waybar/scripts/venv/bin/python ~/.config/waybar/scripts/waybar-wttr.py",
+        "return-type": "json"
+    }
+}
