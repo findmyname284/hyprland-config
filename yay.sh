@@ -1,1 +1,1 @@
-yay -S visual-studio-code-bin audacity abiword wlogout mission-center spicetify-cli cava discord kdeconnect
+yay -S visual-studio-code-bin audacity wlogout mission-center spicetify-cli cava discord kdeconnect
